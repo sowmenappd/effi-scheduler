@@ -1,0 +1,74 @@
+[
+    { 
+        "code"  : "CSE-111",
+        "credit": 3,
+        "title" : "Discrete Mathematics and its applications"
+    },
+    {
+        "code"  : "CSE-121",
+        "credit": 3,
+        "title" : "Digital Logic and Design"
+    },
+    {
+        "code"  : "CSE-122",
+        "credit": 1.5,
+        "title" : "Digital Logic and Design (Sessional)"
+    },
+    {
+        "code"  : "CSE-141",
+        "credit": 3,
+        "title" : "Structured Programming: C"
+    },
+    {
+        "code"  : "CSE-142",
+        "credit": 1.5,
+        "title" : "Structured Programming: C (Sessional)"
+    },
+    {
+        "code"  : "CSE-143",
+        "credit": 3,
+        "title" : "Object Oriented Programming: C++"
+    },
+    {
+        "code"  : "CSE-144",
+        "credit": 3,
+        "title" : "Object Oriented Programming: C++ (Sessional)"
+    },
+    {
+        "code"  : "CSE-100",
+        "credit": 0.75,
+        "title" : "Computer Fundamentals (Sessional)"
+    },
+    {
+        "code"  : "CSE-241",
+        "credit": 3,
+        "title" : "Data Structures"
+    },
+    {
+        "code"  : "CSE-242",
+        "credit": 1.5,
+        "title" : "Data Structures (Sessional)"
+    },
+    {
+        "code"  : "CSE-243",
+        "credit": 1.5,
+        "title" : "Algorithms"
+    },
+    {
+        "code"  : "CSE-244",
+        "credit": 1.5,
+        "title" : "Algorithms (Sessional)"
+    },
+    {
+        "code"  : "CSE-251",
+        "credit": 3,
+        "title" : "Database Management Systems"
+    },
+    {
+        "code"  : "CSE-252",
+        "credit": 1.5,
+        "title" : "Database Management Systems (Sessional)"
+    }
+]
+
+
