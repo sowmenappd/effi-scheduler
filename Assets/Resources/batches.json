@@ -1,0 +1,23 @@
+[
+    {
+        "name" : "batch-17",
+        "semester" : 2,
+        "subjects" : [
+            "CSE-111",
+            "CSE-121",
+            "CSE-122",
+            "CSE-142",
+            "CSE-144"
+        ]
+    },
+    {
+        "name" : "batch-16",
+        "semester" : 4,
+        "subjects" : [
+            "CSE-243",
+            "CSE-244",
+            "CSE-251",
+            "CSE-252"
+        ]
+    }
+]

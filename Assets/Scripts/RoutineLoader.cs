@@ -17,17 +17,28 @@ public class RoutineLoader : MonoBehaviour
     private string jsonData = "";
 
     public void Start(){
-        jsonData = Utilities.LoadJsonToMemory("courses.json");
-        courses = JsonMapper.ToObject<Course[]>(jsonData);
         
+    }
+
+    public void LoadCourses(){
+        // if(courseHolder.childCount != 0){
+        //     foreach(Transform t in courseHolder.GetComponentsInChildren<Transform>())
+        //         Destroy(t.gameObject);
+        // }
+
+        jsonData = Utilities.LoadFileToMemory(AppManager.Instance.SubjectListsPath + "courses.json");
+        courses = JsonMapper.ToObject<Course[]>(jsonData);
+
+        AppManager.Instance.selectedCourses = new List<Course>(courses);
+
         foreach(Course c in courses){
             GameObject g = Instantiate(textPrefab, courseHolder.position, Quaternion.identity);
             g.transform.GetChild(1).GetComponent<Text>().text = c.code + " : " + c.credit + " credits";
             g.transform.GetChild(0).GetChild(0).GetComponent<Text>().text = c.code + " : " + c.credit + " credits";
-            g.transform.parent = courseHolder;
+            g.transform.SetParent(courseHolder);
+            //g.transform.SetAsLastSibling();
         }
-
-        //Utilities.CopyToFile(Application.dataPath + "/Resources/courses.json", Application.dataPath + "/Resources/" +"courses_new.json");
+        courseHolder.parent.parent.GetChild(1).GetComponent<Scrollbar>().value = 1;
     }
 
     

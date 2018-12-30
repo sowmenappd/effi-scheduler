@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class Utilities
 {
-    public static string LoadJsonToMemory(string fileNameInResources){
-        StreamReader sr = new StreamReader(Application.dataPath + "/Resources/" + fileNameInResources);
+    public static string LoadFileToMemory(string filePath){
+        StreamReader sr = new StreamReader(filePath);
 
         string line, data = "";
 
@@ -34,7 +34,7 @@ public class Utilities
         StreamWriter sw = new StreamWriter(System.IO.File.Create(path));
         
         try{
-            while(j != i + 1){
+            while(j != i){
                 sw.Write(data[j++] + "\n");
             }
         } catch(Exception e){
@@ -42,4 +42,6 @@ public class Utilities
         }
         sw.Close();
     }
+
+    
 }
